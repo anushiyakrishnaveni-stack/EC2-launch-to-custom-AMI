@@ -24,3 +24,72 @@ sudo apt-get update
 sudo apt-get install tomcat10
 sudo systemctl enable tomcat10
 sudo systemctl start tomcat10
+3. Firewall & Security Configuration
+OS Level: Configured UFW to allow port 8080.
+
+Bash
+sudo ufw allow 8080/tcp
+AWS Level: Added a Custom TCP Rule to the Security Group for Port 8080 from anywhere (0.0.0.0/0).
+
+**4. Verification**
+Accessed the server via: http://<Public-IPv4-Address>:8080
+
+Confirmed the "It works!" Tomcat default landing page.
+
+**5. AMI Creation**
+Captured an image of the configured instance via the AWS Console (Actions > Images and templates > Create image).
+
+Verified the AMI status as 'Available'.
+
+Tested the AMI by launching a new instance, which successfully served the Tomcat page without any additional configuration.
+
+**📸 Screenshots**
+(Hint: Move your uploaded screenshots into an /images folder in your repo and link them here!)
+
+8080 port added.png - Security Group configuration.
+
+Tomcat server.png - Successful web server response.
+
+AMI created.png - Successful image capture in AWS.
+
+3. Firewall & Security Configuration
+OS Level: Configured UFW to allow port 8080.
+
+Bash
+sudo ufw allow 8080/tcp
+AWS Level: Added a Custom TCP Rule to the Security Group for Port 8080 from anywhere (0.0.0.0/0).
+
+4. Verification
+Accessed the server via: http://<Public-IPv4-Address>:8080
+
+Confirmed the "It works!" Tomcat default landing page.
+
+5. AMI Creation
+Captured an image of the configured instance via the AWS Console (Actions > Images and templates > Create image).
+
+Verified the AMI status as 'Available'.
+
+Tested the AMI by launching a new instance, which successfully served the Tomcat page without any additional configuration.
+
+📸 Screenshots
+(Hint: Move your uploaded screenshots into an /images folder in your repo and link them here!)
+
+8080 port added.png - Security Group configuration.
+
+Tomcat server.png - Successful web server response.
+
+AMI created.png - Successful image capture in AWS.
+
+🎯 Conclusion
+Creating custom AMIs is a foundational DevOps practice. It reduces manual configuration errors and significantly decreases the time-to-market for deploying new application nodes.
+
+
+---
+
+**Would you like me to help you draft a specific description for your YouTube chann
+Creating custom AMIs is a foundational DevOps practice. It reduces manual configuration errors and significantly decreases the time-to-market for deploying new application nodes.
+
+
+---
+
+**Would you like me to help you draft a specific description for your YouTube chann
